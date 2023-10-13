@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #1763a5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width:100vw;
+        }
+        .container{
+            padding:15px;
+            border:2px solid white;
+            color:aliceblue;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="hour">0</span>:<span class="minute">0</span>:<span class="second">0</span>
+    </div>
+    <script>
+       function updateTimer(){
+        const date=new Date();
+        const hour=date.getHours().toString().padStart(2,"0");
+        const minute=date.getMinutes().toString().padStart(2,"0");
+        const second=date.getSeconds().toString().padStart(2,"0");
+        document.querySelector(".hour").innerText=hour;
+        document.querySelector(".minute").innerHTML=minute;
+        document.querySelector(".second").innerHTML=second;
+        document.body.style.backgroundColor="purple"
+      
+      
+    }
+    setInterval(updateTimer(),3000)
+    // let date=new Date();
+    // console.log(date);
+    // console.log(date.getHours().toString());
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pic{
+            width:300px;
+            height:300px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Your Image Is Visible🎠</h1>
+    <button class="btn" onclick="toggleImage()">Click</button>
+    <br>
+   <img src="highpiximg2.jpg" alt="" class="pic">
+   <br>
+  
+    <script>
+        const txt=document.querySelector(".heading");
+        const btn=document.querySelector(".btn");;
+        const pic=document.querySelector(".pic")
+        function toggleImage(){
+            btn.addEventListener("click",function(){
+                if(txt.innerHTML==="Your Image Is Visible🎠"){
+                    txt.innerHTML="Your Image Is Not Visible📜";
+                    pic.style.visibility="hidden"
+                }
+                else{
+                    txt.innerHTML="Your Image Is Visible🎠";
+                    pic.style.visibility="visible"
+                }
+            })
+            
+        }
+    </script>
+</body>
+</html>

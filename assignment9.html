@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="login()">Login</button>
+    <button onclick="logout()">Logout</button>
+    <h1 class="heading"></h1>
+    <script>
+        function login(){
+            localStorage.setItem("auth",true);
+            
+        };
+        function logout(){
+            localStorage.setItem("auth",false);
+            
+        };
+        const loginStatus=localStorage.getItem("auth")
+        if(loginStatus==true){
+            document.querySelector(".heading").innerHTML="You Login Succsefully"
+        }
+        else{
+            document.querySelector(".heading").innerHTML="You Login not  Succsefully"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="search" name="search" id="search" placeholder="search for items">
+    <h2>Results:
+    </h2>
+    <ul class="items">
+        <li>css</li>
+        <li>html</li>
+        <li>python</li>
+        <li>java</li>
+        <li>node</li>
+    </ul>
+    <script>
+
+        const searchList=document.querySelector("#search");
+        const itemList=document.querySelector(".items").getElementsByTagName("li");
+        searchList.addEventListener("input",function(){
+           const  searchValue=searchList.value.toLowerCase();
+           for(let i=0;i<itemList.length;i++){
+           const itemValue=itemList[i].innerText.toLowerCase();
+           
+           if(itemValue.includes(searchValue)){
+            itemList[i].style.display="block"
+           }
+           else{
+            itemList[i].style.display="none"
+           }
+        }
+        })
+        
+    </script>
+</body>
+</html>

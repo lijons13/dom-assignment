@@ -1,0 +1,70 @@
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="container">
+<h1>Choose Your Favourite language<span><select name="" id="select"></select></span></h1>
+</div>
+<script>
+    options=["css","html","javascript","java"]
+    const container=document.querySelector(".container");
+    
+    const select=document.querySelector("#select")
+    options.map((data)=>{
+        const option=document.createElement("option")
+        option.innerText=data;
+        option.value=data;
+        select.appendChild(option)
+        
+        
+    })
+</script>
+    
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+    <script>
+        const options=["JAVASCRIPT","CSS","HTML","PYTHON"]
+        const heading=document.createElement("h2");
+        const span=document.createElement("span");
+        const select=document.createElement("select");
+        const container=document.querySelector("#container");
+        
+        heading.innerHTML="Choose Your Favourite Language:"
+
+        options.map((data)=>{
+const option=document.createElement("option");
+            option.innerText=data;
+            option.value=data
+            select.appendChild(option)
+
+        });
+        container.appendChild(heading);
+        heading.appendChild(span);
+        span.appendChild(select)
+
+    </script>
+    
+</body> -->

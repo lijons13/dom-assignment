@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>counter</h1>
+    <div><span><button onclick="increment()">+</button></span><span id="count">0</span><span><button onclick="decrement()">-</button></span></div>
+    <p id="demo"></p>
+   <script>
+    let count=document.getElementById("count");
+     function increment(){
+        
+        count.innerHTML=Number(count.innerHTML)+1
+    }
+    function decrement(){
+        if(Number(count.innerText)>0){
+        count.innerHTML=Number(count.innerHTML)-1
+        }
+        else{
+            document.getElementById("demo").innerHTML="you cross your limits"
+        }
+    }
+   </script>
+
+</body>
+</html> 
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>COUNTER</h1>
+ <div><span>
+    <button onclick="increment()">+</button>
+ </span>
+ <span class="count">0</span>
+ <span><button onclick="decrement()">-</button></span>
+ </div>
+    <script>
+        const count=document.querySelector(".count")
+
+function decrement(){
+
+    count.innerHTML=Number((count.innerHTML)-1)
+   
+}
+
+function increment(){
+    count.innerHTML=Number(count.innerHTML)-1
+   
+    
+}
+    </script>
+    
+</body>
+</html>
